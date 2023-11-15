@@ -47,6 +47,6 @@ def pwd(ssid, psws):
         number += 1
         crack(ssid, str(psw), number)
          
-with open("psw.txt", "r", encoding='utf8') as f:
+with open("passwords.txt", "r", encoding='utf8') as f:
     psws = f.read().strip().split("\n")
-    pwd("Sparky", psws)
+    pwd("Redmi 9", psws)
