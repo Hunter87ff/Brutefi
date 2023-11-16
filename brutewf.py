@@ -3,13 +3,10 @@
 # Insta  : https://instagram.com/im_hunter87
 # Youtube: https://youtube.com/@hunter87
 
-try:
-    import os, time, pywifi
-    from pywifi import PyWiFi, const, Profile
-except:
-    libs = ["pywifi"]
-    for i in libs:
-        os.system(f"pip install {i}")
+
+import os, time, pywifi
+from pywifi import PyWiFi, const, Profile
+os.system("pip install pywifi")
 try:
     wifi = PyWiFi()
     ifaces = wifi.interfaces()[0]
@@ -49,4 +46,5 @@ def pwd(ssid, psws):
          
 with open("passwords.txt", "r", encoding='utf8') as f:
     psws = f.read().strip().split("\n")
-    pwd("Redmi 9", psws)
+    target = input("Enter Wifi Name : ")
+    pwd(str(target), psws)
