@@ -8,6 +8,7 @@ cyan='\033[36m'
 blue='\033[34m'
 NC='\033[0m'
 import os, time, sys
+count = 1
 def main():
     try:
         import pywifi
@@ -45,7 +46,8 @@ def main():
             time.sleep(1)
             exit()
         else:
-            print(f'{red}Crack Failed using {password}')
+            print(f'{red}{count}) Crack Failed using {password}')
+            count+=1
 
     def pwd(ssid, psws):
         number = 0
