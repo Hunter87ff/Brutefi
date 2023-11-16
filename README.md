@@ -18,3 +18,8 @@ python main.py
 ```bash
 python3 main.py
 ```
+### Update
+> currently wifi module is only available for windows
+
+## Usage
+![ss](assets/ss.png)
