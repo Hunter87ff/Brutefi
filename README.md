@@ -22,4 +22,4 @@ python3 main.py
 > currently wifi module is only available for windows
 
 ## Screenshot
-![ss](https://images-ext-2.discordapp.net/external/ZZv6StqajRuiF4DwvmPOZ8JvjRwIrXGlopd0UEFdW0w/https/raw.githubusercontent.com/Hunter87ff/BruteWeb/main/assets/ss.png?width=584&height=394)
+![ss](https://raw.githubusercontent.com/Hunter87ff/Brutefi/main/assets/ssweb.png)
