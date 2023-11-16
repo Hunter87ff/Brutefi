@@ -21,5 +21,5 @@ python3 main.py
 ### Update
 > currently wifi module is only available for windows
 
-## Usage
+## Screenshot
 ![ss](https://images-ext-2.discordapp.net/external/ZZv6StqajRuiF4DwvmPOZ8JvjRwIrXGlopd0UEFdW0w/https/raw.githubusercontent.com/Hunter87ff/BruteWeb/main/assets/ss.png?width=584&height=394)
