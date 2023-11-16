@@ -7,13 +7,14 @@ red='\033[0;31m'
 cyan='\033[36m' 
 blue='\033[34m'
 NC='\033[0m'
+import os, time, sys
 def main():
     try:
-        import os, time, pywifi
+        import pywifi
         from pywifi import PyWiFi, const, Profile
     except:
         print(f"{blue}Installing Packages")
-        os.system("pip install requirements.txt")
+        os.system("pip install -r requirements.txt")
     try:
         wifi = PyWiFi()
         ifaces = wifi.interfaces()[0]
@@ -23,6 +24,7 @@ def main():
         iface = wifi.interfaces()[0]
     except Exception as e:
         print(f"{red}Error : {e}")
+        sys.exit()
 
     def crack(ssid, password, number):
         pro = Profile() 
