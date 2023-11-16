@@ -6,8 +6,8 @@ Remember, Your ip may get blocked by the firewall. Use this tool only for securi
 
 ## Installation
 ```bash
-git clone https://github.com/Hunter87ff/BruteWeb
-cd BruteWeb
+git clone https://github.com/Hunter87ff/Brutefi
+cd Brutefi
 pip install requirements.txt
 ```
 - For Windows
