@@ -1,4 +1,4 @@
-# BruteWeb
+# Brutefi
 Simple brute force attacking tool for web.  
 
 ## Notice
