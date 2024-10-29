@@ -1,7 +1,7 @@
 # Author : Hunter87
 # Github : https://github.com/hunter87ff
 # Insta  : https://instagram.com/im_hunter87
-# Youtube: https://youtube.com/@hunter87
+# Youtube: https://youtube.com/@im_hunter87
 lgr='\033[1;32m' 
 red='\033[0;31m' 
 cyan='\033[36m' 
